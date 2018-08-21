@@ -4,6 +4,7 @@ From this BGP output obtain the first and last lines of the output.
 From the first line use the string .split() method to obtain the local AS#
 From the last line use the string .split() method to obtain the BGP peer IP
 Print both local AS number and the BGP peer IP address to the screen.
+test2
 """
 from __future__ import print_function, unicode_literals
 
