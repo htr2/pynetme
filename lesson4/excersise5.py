@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-""""
+"""
 Read the 'show_ipv6_intf.txt' file.
 From this file use Python regular expressions to extract the two IPv6 addresses.
 The two relevant IPv6 addresses you need to extract are:
@@ -17,10 +17,11 @@ with open("lesson4/show_ip_int.txt") as f:
     f_str = f.read()
 
 
-match = re.search(r"IPv6 address:\n\s(.*[VALID]).*(.*)", f_str, flags=re.DOTALL)
+#se re.DOTALL to have .* span newlines
+match = re.search(r"IPv6 address:\s+(.*).....[VALID].\s+(.*)IPv6 subnet:", f_str, flags=re.DOTALL)
 
-print(match.group(1))
-#print(match.group(0))
+ipv6_list = [match.group(1).strip(),match.group(2).strip()]
+print("IPv6 addresses are:", ipv6_list)
 
 
 
