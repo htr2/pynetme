@@ -1,0 +1,45 @@
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Documents: http://www.cisco.com/en/US/products/ps9372/tsd_products_support_series_home.html
+Copyright (c) 2002-2014, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained herein are owned by
+other third parties and are used and distributed under license.
+Some parts of this software are covered under the GNU Public
+License. A copy of the license is available at
+http://www.gnu.org/licenses/gpl.html.
+
+Software
+  BIOS:      version 3.6.0
+  loader:    version N/A
+  kickstart: version 5.2(1)N1(7)
+  system:    version 5.2(1)N1(7)
+  power-seq: Module 1: version v5.0
+             Module 2: version v1.0
+             Module 3: version v1.0
+  uC:        version v1.0.0.2
+  SFP uC:    Module 1: v1.0.0.0
+  BIOS compile time:       05/09/2012
+  kickstart image file is: bootflash:///n5000-uk9-kickstart.5.2.1.N1.7.bin
+  kickstart compile time:  2/4/2014 23:00:00 [02/05/2014 08:58:28]
+  system image file is:    bootflash:///n5000-uk9.5.2.1.N1.7.bin
+  system compile time:     2/4/2014 23:00:00 [02/05/2014 11:27:58]
+
+
+Hardware
+  cisco Nexus5596 Chassis ("O2 48X10GE/Modular Supervisor")
+  Intel(R) Xeon(R) CPU         with 8263828 kB of memory.
+  Processor Board ID FOC162120HE
+
+  Device name: MKT-LON6-DSW1A
+  bootflash:    2007040 kB
+
+Kernel uptime is 1348 day(s), 23 hour(s), 11 minute(s), 21 second(s)
+
+Last reset at 99396 usecs after  Sun Dec  7 11:08:00 2014
+
+  Reason: Reset due to upgrade
+  System version: 5.2(1)N1(5)
+  Service: 
+
+plugin
+  Core Plugin, Ethernet Plugin
