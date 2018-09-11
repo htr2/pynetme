@@ -18,11 +18,11 @@ template_vars = {
     'vlan_name': 'red400',
 }
 
-vlan_template = ('''
+vlan_template = '''
 vlan {{ vlan_id }}
-    name {{ vlan_name }}''')
+   name {{ vlan_name }}
+'''
 
-
-
+template = jinja2.Template(vlan_template)
 print(template.render(template_vars))
 
