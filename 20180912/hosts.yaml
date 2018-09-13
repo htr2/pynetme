@@ -1,0 +1,12 @@
+---
+LON4LABWANRT1.lon4:
+    nornir_host: 10.25.254.97
+    groups:
+        - lon4lab
+    nornir_nos: cisco_ios
+
+LON4LABNXOSLF2.lon4:
+    nornir_host: 10.25.254.158
+    groups:
+        - lon4lab
+    nornir_nos: cisco_ios

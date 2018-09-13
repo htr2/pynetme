@@ -1,0 +1,7 @@
+---
+defaults:
+    nornir_username: admin
+    nornir_password: LON4labPW$
+
+lon4lab:
+    site: lon4

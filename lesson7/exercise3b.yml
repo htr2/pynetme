@@ -10,9 +10,4 @@ interfaces:
     mode: trunk
     native_vlan: 1
     trunk_vlans: all
-  Ethernet4:
-  Ethernet5:
-  Ethernet6:
-  Ethernet7:
-  Management1:
-  Vlan1:
+

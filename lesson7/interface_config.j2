@@ -1,0 +1,4 @@
+{%- for int in interfaces %}
+interface {{ int }}
+  switchport mode {{ switchport_mode }}
+{%- endfor %} 

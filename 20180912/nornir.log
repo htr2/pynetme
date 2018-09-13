@@ -1,0 +1,1310 @@
+2018-09-12 21:50:29,811 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:50:29,811 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:50:29,811 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:50:29,811 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:50:29,851 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:50:29,851 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:50:29,851 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:50:29,851 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:50:29,857 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:50:29,857 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:50:29,857 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:50:29,857 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:50:29,858 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:50:29,858 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:50:29,858 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:50:29,858 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:50:29,859 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:50:29,859 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:50:29,859 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:50:29,859 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:50:30,620 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:30,620 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:30,628 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:30,628 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:32,504 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:32,504 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:32,506 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:50:32,506 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:53:06,171 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:53:06,171 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:54:16,619 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:54:16,619 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:54:17,701 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:54:17,701 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:54:17,701 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:54:17,701 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:54:17,708 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:54:17,708 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:54:17,709 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:54:17,709 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:54:17,710 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:54:17,710 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:54:17,710 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:54:17,710 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:54:17,710 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:54:17,710 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:54:17,711 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:54:17,711 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:54:18,425 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:18,425 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:18,428 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:18,428 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:20,333 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:20,333 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:20,336 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:54:20,336 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:14,184 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:55:14,184 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 21:55:14,184 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:55:14,184 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 21:55:14,201 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:55:14,201 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:55:14,201 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 21:55:14,201 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 21:55:14,208 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:55:14,208 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:55:14,209 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:55:14,209 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:55:14,210 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:55:14,210 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 21:55:14,210 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:55:14,210 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 21:55:14,210 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:55:14,210 -       nornir -    DEBUG -        run() - {}
+2018-09-12 21:55:14,211 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:55:14,211 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 21:55:14,962 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:14,962 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:14,969 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:14,969 -       nornir -    ERROR -      start() - LON4LABNXOSLF2: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:16,843 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:16,843 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:16,845 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 21:55:16,845 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 23, in remote_command
+    client = task.host.get_connection("paramiko")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\paramiko_connection.py", line 45, in paramiko_connection
+    client.connect(**parameters)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 424, in connect
+    passphrase,
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 714, in _auth
+    raise saved_exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\client.py", line 701, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\transport.py", line 1381, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\paramiko\auth_handler.py", line 226, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2018-09-12 22:03:10,555 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:03:10,555 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:03:10,556 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:03:10,556 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:03:10,573 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:03:10,573 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:03:10,573 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:03:10,573 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:03:10,580 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:10,580 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:10,581 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:10,581 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:10,581 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:10,581 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:10,582 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:03:10,582 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:03:10,582 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:10,582 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:10,583 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:03:10,583 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:03:36,007 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:03:36,007 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:03:36,007 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-12 22:03:36,007 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-12 22:03:36,027 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:03:36,028 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:03:36,028 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:03:36,027 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:03:36,036 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:36,036 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:36,036 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:36,036 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:36,037 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:36,037 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:03:36,037 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:03:36,037 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:36,037 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:03:36,037 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:03:36,038 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:03:36,038 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:04:23,128 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:04:23,128 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:04:23,129 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:04:23,129 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:04:23,147 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:04:23,147 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:04:23,147 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:04:23,147 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:04:23,157 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:04:23,157 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:04:23,158 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:04:23,158 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:04:23,158 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:04:23,158 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:04:23,158 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:04:23,158 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:04:23,159 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:04:23,159 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:04:23,159 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:04:23,159 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:05:38,760 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:05:38,760 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:05:38,760 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:05:38,760 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-12 22:05:38,778 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:05:38,778 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:05:38,778 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:05:38,778 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:05:38,785 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:05:38,785 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:05:38,786 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:05:38,786 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:05:38,786 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:05:38,786 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:05:38,786 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:05:38,786 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:05:38,787 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:05:38,787 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:05:38,787 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:05:38,787 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:06:25,761 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:06:25,761 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:06:25,761 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:06:25,761 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:06:25,780 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:06:25,780 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:06:25,780 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:06:25,780 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:06:25,788 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:06:25,788 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:06:25,788 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:06:25,788 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:06:25,789 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:06:25,789 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:06:25,790 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:06:25,790 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:06:25,790 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:06:25,790 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:06:25,790 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:06:25,790 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:07:30,316 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:07:30,316 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:07:30,316 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:07:30,316 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:07:30,324 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:07:30,324 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:07:30,324 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:07:30,324 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:07:30,324 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:07:30,324 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:07:30,324 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:07:30,324 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:07:30,324 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:07:30,340 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:07:30,340 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:08:20,391 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:08:20,391 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:08:20,392 -       nornir -    DEBUG -        run() - {'command': 'show hostname'}
+2018-09-12 22:08:20,392 -       nornir -    DEBUG -        run() - {'command': 'show hostname'}
+2018-09-12 22:08:20,392 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:08:20,392 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:08:20,392 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:08:20,392 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:08:20,415 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:08:20,415 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:08:20,416 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:08:20,416 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:08:20,417 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:08:20,417 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:08:20,417 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:08:20,417 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:08:20,417 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:08:20,417 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:08:20,418 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:08:20,418 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:10:00,607 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:10:00,607 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-12 22:10:00,607 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:10:00,607 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-12 22:10:00,628 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:10:00,628 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:10:00,628 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-12 22:10:00,628 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-12 22:10:00,637 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:10:00,637 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:10:00,638 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:10:00,638 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:10:00,638 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:10:00,638 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-12 22:10:00,639 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:10:00,639 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-12 22:10:00,639 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:10:00,639 -       nornir -    DEBUG -        run() - {}
+2018-09-12 22:10:00,639 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-12 22:10:00,639 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:14:50,057 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:14:50,057 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:14:50,057 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:14:50,057 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:14:50,077 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:14:50,077 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:14:50,077 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:14:50,077 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:14:50,079 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:14:50,079 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:14:50,079 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:14:50,079 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:14:50,079 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:14:50,079 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:14:50,079 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:14:50,079 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:14:50,079 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:14:50,079 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:14:50,079 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:14:50,079 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:18:02,971 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:18:02,971 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:18:02,971 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:18:02,971 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:18:02,987 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:18:02,987 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:18:02,987 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:18:02,987 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:18:03,002 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:18:03,002 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:18:03,002 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:18:03,002 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:18:03,002 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:18:03,002 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:18:03,002 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:18:03,002 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:18:03,002 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:18:03,002 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:18:03,002 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:18:03,002 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:18:15,531 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:18:15,531 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:18:15,531 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:18:15,531 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:18:15,553 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:18:15,553 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:18:15,553 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:18:15,553 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:18:15,553 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 25, in remote_command
+    chan = client.get_transport().open_session()
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 767, in open_session
+    timeout=timeout)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 854, in open_channel
+    raise SSHException('SSH session not active')
+paramiko.ssh_exception.SSHException: SSH session not active
+
+2018-09-13 10:18:15,553 -       nornir -    ERROR -      start() - LON4LABWANRT1: Traceback (most recent call last):
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 25, in remote_command
+    chan = client.get_transport().open_session()
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 767, in open_session
+    timeout=timeout)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 854, in open_channel
+    raise SSHException('SSH session not active')
+paramiko.ssh_exception.SSHException: SSH session not active
+
+2018-09-13 10:20:14,265 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:20:14,265 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:20:14,265 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:20:14,265 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:20:14,281 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:20:14,281 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:21:08,220 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:21:08,220 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:21:08,220 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:21:08,220 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:21:08,236 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:21:08,236 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:21:47,226 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:21:47,226 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:21:47,226 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:21:47,226 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:21:47,241 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:21:47,241 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:21:47,241 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:21:47,241 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:21:47,257 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:21:47,257 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:21:47,257 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:21:47,257 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:21:47,257 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:21:47,257 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:21:47,257 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:21:47,257 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:21:47,257 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:21:47,257 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:21:47,257 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:21:47,257 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:22:05,597 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:22:05,597 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:22:05,597 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:22:05,597 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:22:05,619 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:22:05,619 -       nornir -     INFO -      start() - LON4LABWANRT1: remote_command: running task
+2018-09-13 10:22:05,619 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:22:05,619 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:22:05,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:22:05,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:22:05,635 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:22:05,635 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:22:05,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:22:05,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:22:05,635 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:22:05,635 -       nornir -     INFO -      start() - LON4LABWANRT1: paramiko_connection: running task
+2018-09-13 10:22:05,635 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:22:05,635 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:22:05,635 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:22:05,635 -       nornir -     INFO -      start() - LON4LABNXOSLF2: paramiko_connection: running task
+2018-09-13 10:22:41,392 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:22:41,392 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:22:41,392 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:22:41,392 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:22:41,408 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:22:41,408 -       nornir -     INFO -      start() - LON4LABNXOSLF2: remote_command: running task
+2018-09-13 10:46:56,766 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:46:56,766 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:46:56,766 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:46:56,766 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 10:46:56,782 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 10:46:56,782 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 10:46:56,782 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 10:46:56,782 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 10:46:56,798 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:46:56,798 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:46:56,798 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:46:56,798 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:46:56,798 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:46:56,798 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 10:46:56,798 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 10:46:56,798 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 10:46:56,798 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:46:56,798 -       nornir -    DEBUG -        run() - {}
+2018-09-13 10:46:56,798 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 10:46:56,798 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 10:47:49,853 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:47:49,853 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 10:47:49,853 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-13 10:47:49,853 -       nornir -    DEBUG -        run() - {'command': 'dir'}
+2018-09-13 10:47:49,869 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 10:47:49,869 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 10:47:49,869 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 10:47:49,869 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 10:47:49,884 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 25, in remote_command
+    chan = client.get_transport().open_session()
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 767, in open_session
+    timeout=timeout)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 854, in open_channel
+    raise SSHException('SSH session not active')
+paramiko.ssh_exception.SSHException: SSH session not active
+
+2018-09-13 10:47:49,884 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\nornir\plugins\tasks\commands\remote_command.py", line 25, in remote_command
+    chan = client.get_transport().open_session()
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 767, in open_session
+    timeout=timeout)
+  File "c:\users\henning.voelksen\appdata\local\programs\python\python36-32\lib\site-packages\paramiko\transport.py", line 854, in open_channel
+    raise SSHException('SSH session not active')
+paramiko.ssh_exception.SSHException: SSH session not active
+
+2018-09-13 11:06:44,602 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:06:44,602 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:06:44,602 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 11:06:44,602 -       nornir -    DEBUG -        run() - {'command': 'show clock'}
+2018-09-13 11:06:44,624 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:06:44,624 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:06:44,624 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:06:44,624 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:06:44,634 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:06:44,634 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:06:44,634 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:06:44,634 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:06:44,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:06:44,635 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:06:44,635 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:06:44,635 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:06:44,636 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:06:44,636 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:06:44,636 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:06:44,636 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:07:06,259 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:07:06,259 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:07:06,260 -       nornir -    DEBUG -        run() - {'command': 'show arp'}
+2018-09-13 11:07:06,260 -       nornir -    DEBUG -        run() - {'command': 'show arp'}
+2018-09-13 11:07:06,278 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:07:06,278 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:07:06,278 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:07:06,278 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:07:06,288 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:06,288 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:06,288 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:06,288 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:06,289 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:06,289 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:06,289 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:07:06,289 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:07:06,289 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:06,289 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:06,290 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:07:06,290 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:07:32,141 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:07:32,141 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:07:32,141 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:07:32,141 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:07:32,156 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:07:32,156 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:07:32,157 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:07:32,157 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:07:32,167 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:32,167 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:32,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:32,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:32,169 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:32,169 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:07:32,169 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:07:32,169 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:07:32,169 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:32,169 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:07:32,170 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:07:32,170 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:25:50,721 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:25:50,721 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:25:50,721 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:25:50,721 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:25:50,757 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:25:50,757 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:25:50,757 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:25:50,757 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:25:50,757 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:25:50,757 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:25:50,757 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:25:50,757 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:50:00,287 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:50:00,287 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:50:00,287 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:50:00,287 -       nornir -    DEBUG -        run() - {'command': 'show ver'}
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:00,304 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:00,304 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:00,304 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:00,304 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:00,304 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:00,304 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:00,304 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:50:00,304 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:50:15,344 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:50:15,344 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 11:50:15,344 -       nornir -    DEBUG -        run() - {'command': 'show run'}
+2018-09-13 11:50:15,344 -       nornir -    DEBUG -        run() - {'command': 'show run'}
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:15,360 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:15,360 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:15,360 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:15,360 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 11:50:15,360 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 11:50:15,375 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:15,375 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:50:15,375 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:50:15,375 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 11:51:34,112 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 20
+2018-09-13 11:51:34,112 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 20
+2018-09-13 11:51:34,112 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
+2018-09-13 11:51:34,112 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
+2018-09-13 11:51:34,127 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_get: running task
+2018-09-13 11:51:34,127 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_get: running task
+2018-09-13 11:51:34,127 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_get: running task
+2018-09-13 11:51:34,127 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_get: running task
+2018-09-13 11:51:34,127 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:51:34,127 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:51:34,127 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:51:34,127 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:51:34,143 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:51:34,143 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:51:34,143 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_connection: running task
+2018-09-13 11:51:34,143 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_connection: running task
+2018-09-13 11:51:34,143 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:51:34,143 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:51:34,143 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_connection: running task
+2018-09-13 11:51:34,143 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_connection: running task
+2018-09-13 11:51:34,165 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,165 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,165 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,165 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,181 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,181 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,181 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:51:34,181 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,146 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 20
+2018-09-13 11:52:18,146 -       nornir -     INFO -        run() - Running task 'napalm_get' with num_workers: 20
+2018-09-13 11:52:18,146 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
+2018-09-13 11:52:18,146 -       nornir -    DEBUG -        run() - {'getters': ['facts']}
+2018-09-13 11:52:18,164 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_get: running task
+2018-09-13 11:52:18,164 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_get: running task
+2018-09-13 11:52:18,164 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_get: running task
+2018-09-13 11:52:18,164 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_get: running task
+2018-09-13 11:52:18,168 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:52:18,168 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:52:18,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:52:18,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:52:18,168 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:52:18,168 -       nornir -     INFO -        run() - Running task 'napalm_connection' with num_workers: 1
+2018-09-13 11:52:18,168 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_connection: running task
+2018-09-13 11:52:18,168 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: napalm_connection: running task
+2018-09-13 11:52:18,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:52:18,168 -       nornir -    DEBUG -        run() - {}
+2018-09-13 11:52:18,168 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_connection: running task
+2018-09-13 11:52:18,168 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: napalm_connection: running task
+2018-09-13 11:52:18,168 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,168 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABWANRT1.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 11:52:18,183 -       nornir -    ERROR -      start() - LON4LABNXOSLF2.lon4: Traceback (most recent call last):
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\networking\napalm_get.py", line 41, in napalm_get
+    device = task.host.get_connection("napalm")
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\inventory.py", line 250, in get_connection
+    raise r[self.name].exception
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\core\task.py", line 62, in start
+    r = self.task(self, **self.params)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\nornir\plugins\tasks\connections\napalm_connection.py", line 51, in napalm_connection
+    network_driver = get_network_driver(platform)
+  File "C:\Users\henning.voelksen\AppData\Local\Programs\Python\Python36-32\lib\site-packages\napalm\base\__init__.py", line 101, in get_network_driver
+    install_name=name
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios". Is the library installed?
+
+2018-09-13 12:08:15,599 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 12:08:15,599 -       nornir -     INFO -        run() - Running task 'remote_command' with num_workers: 20
+2018-09-13 12:09:40,543 -       nornir -    DEBUG -        run() - {'command': 'show run'}
+2018-09-13 12:09:40,543 -       nornir -    DEBUG -        run() - {'command': 'show run'}
+2018-09-13 12:09:45,636 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 12:09:45,636 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: remote_command: running task
+2018-09-13 12:09:45,636 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 12:09:45,636 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: remote_command: running task
+2018-09-13 12:09:45,647 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 12:09:45,647 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 12:09:45,647 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:09:45,647 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:09:45,648 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 12:09:45,648 -       nornir -     INFO -        run() - Running task 'paramiko_connection' with num_workers: 1
+2018-09-13 12:09:45,648 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 12:09:45,648 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: paramiko_connection: running task
+2018-09-13 12:09:45,648 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:09:45,648 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:09:45,649 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 12:09:45,649 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: paramiko_connection: running task
+2018-09-13 12:13:44,483 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:13:44,483 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:13:44,483 -       nornir -    DEBUG -        run() - {'command_string': 'show arp'}
+2018-09-13 12:13:44,483 -       nornir -    DEBUG -        run() - {'command_string': 'show arp'}
+2018-09-13 12:13:44,502 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:13:44,502 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:13:44,502 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:13:44,502 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:13:44,512 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:13:44,512 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:13:44,512 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:13:44,512 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:13:44,513 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:13:44,513 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:13:44,513 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:13:44,513 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:13:44,513 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:13:44,513 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:13:44,524 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
+2018-09-13 12:13:44,524 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
+2018-09-13 12:14:12,417 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:14:12,417 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:14:12,418 -       nornir -    DEBUG -        run() - {'command_string': 'show ver'}
+2018-09-13 12:14:12,418 -       nornir -    DEBUG -        run() - {'command_string': 'show ver'}
+2018-09-13 12:14:12,433 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:14:12,433 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:14:12,434 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:14:12,434 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:14:12,444 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:12,444 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:12,444 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:12,444 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:12,445 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:12,445 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:12,445 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:14:12,445 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:14:12,445 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:12,445 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:12,446 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
+2018-09-13 12:14:12,446 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
+2018-09-13 12:14:43,772 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:14:43,772 -       nornir -     INFO -        run() - Running task 'netmiko_send_command' with num_workers: 20
+2018-09-13 12:14:43,772 -       nornir -    DEBUG -        run() - {'command_string': 'show run'}
+2018-09-13 12:14:43,772 -       nornir -    DEBUG -        run() - {'command_string': 'show run'}
+2018-09-13 12:14:43,788 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:14:43,788 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_send_command: running task
+2018-09-13 12:14:43,788 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:14:43,788 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_send_command: running task
+2018-09-13 12:14:43,799 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:43,799 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:43,800 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:43,800 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:43,800 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:43,800 -       nornir -     INFO -        run() - Running task 'netmiko_connection' with num_workers: 1
+2018-09-13 12:14:43,800 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:14:43,800 -       nornir -     INFO -      start() - LON4LABWANRT1.lon4: netmiko_connection: running task
+2018-09-13 12:14:43,801 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:43,801 -       nornir -    DEBUG -        run() - {}
+2018-09-13 12:14:43,802 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
+2018-09-13 12:14:43,802 -       nornir -     INFO -      start() - LON4LABNXOSLF2.lon4: netmiko_connection: running task
